@@ -4,16 +4,135 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/warna_light_blue"
+    android:padding="@dimen/jarak_25dp"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/iv_header"
+        android:layout_width="@dimen/jarak_130dp"
+        android:layout_height="@dimen/jarak_130dp"
+        android:layout_marginTop="@dimen/jarak_100dp"
+        android:contentDescription="logo"
+        android:src="@drawable/ic_welcome_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/jarak_20dp"
+        android:backgroundTint="@color/warna_putih"
+        android:hint="Username"
+        android:textColorHint="@color/warna_putih"
+        android:textSize="@dimen/text_size_18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_header" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/jarak_10dp"
+        android:backgroundTint="@color/warna_putih"
+        android:hint="Password"
+        android:textColorHint="@color/warna_putih"
+        android:textSize="@dimen/text_size_18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_username" />
+
+    <Button
+        android:id="@+id/bt_login"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/jarak_18dp"
+        android:backgroundTint="@color/warna_light_blue"
+        android:paddingTop="@dimen/jarak_14dp"
+        android:paddingBottom="@dimen/jarak_14dp"
+        android:text="@string/login"
+        android:textColor="@color/warna_putih"
+        android:textSize="@dimen/text_size_16sp"
+        app:layout_constraintCircleRadius="@dimen/jarak_16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_password"
+        app:strokeColor="@color/warna_putih"
+        app:strokeWidth="@dimen/jarak_1koma8dp" />
+
+    <TextView
+        android:id="@+id/tv_Or"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/jarak_12dp"
+        android:text="@string/or"
+        android:textAlignment="center"
+        android:textColor="@color/warna_putih"
+        android:textSize="@dimen/text_size_16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_login" />
+
+    <Button
+        android:id="@+id/bt_Facebook"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/jarak_12dp"
+        android:backgroundTint="@color/warna_light_blue"
+        android:paddingLeft="@dimen/jarak_35dp"
+        android:paddingTop="@dimen/jarak_8dp"
+        android:paddingRight="@dimen/jarak_35dp"
+        android:paddingBottom="@dimen/jarak_8dp"
+        android:text="@string/connect_with_facebook"
+        android:textColor="@color/warna_putih"
+        android:textSize="@dimen/text_size_16sp"
+        app:icon="@drawable/ic_welcome_fb_login"
+        app:iconTint="@color/warna_putih"
+        app:layout_constraintCircleRadius="@dimen/jarak_16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_Or"
+        app:strokeColor="@color/warna_putih"
+        app:strokeWidth="@dimen/jarak_1koma8dp" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/jarak_12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_Facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/jarak_60dp"
+        android:paddingRight="@dimen/jarak_60dp">
+
         <TextView
+            android:id="@+id/tv_doesnt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:text="doesn't have account ?"
+            android:layout_marginLeft="@dimen/text_size_12sp"
+            android:layout_marginStart="@dimen/text_size_12sp"
+            android:textColor="@color/warna_putih"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_marginStart="@dimen/jarak_4dp"
+            android:textColor="@color/warna_putih"
+            android:textSize="@dimen/text_size_14sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
 
 
 
