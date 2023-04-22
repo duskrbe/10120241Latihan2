@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/warna_putih"
+    tools:context=".MainActivity2">
+
+
+    <ImageView
+        android:id="@+id/iv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        android:src="@drawable/ic_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_headerback"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="@dimen/jarak_16dp"
+        android:layout_marginLeft="@dimen/jarak_16dp"
+        android:layout_marginTop="@dimen/jarak_12dp"
+        android:src="@drawable/ic_header_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:text="Register"
+        android:textColor="@color/warna_putih"
+        android:textSize="@dimen/text_size_18sp"
+        app:layout_constraintStart_toEndOf="@id/iv_headerback"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/jarak_24dp"
+        android:paddingRight="@dimen/jarak_24dp"
+        app:layout_constraintTop_toBottomOf="@id/iv_header">
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/jarak_20dp"
+            android:backgroundTint="@color/black"
+            android:hint="@string/username"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/text_size_16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:layout_marginTop="@dimen/jarak_4dp"
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:hint="@string/email"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/text_size_16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_username" />
+
+        <EditText
+            android:layout_marginTop="@dimen/jarak_4dp"
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:hint="@string/phone_number"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/text_size_16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_email" />
+
+
+        <RadioGroup
+            android:layout_marginTop="@dimen/jarak_4dp"
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/et_phone">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/jarak_10dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size_16sp"
+                android:text="@string/male" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/jarak_10dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size_16sp"
+                android:text="@string/female" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/jarak_4dp"
+            android:id="@+id/spiner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/radiogroup">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Blood Type"
+                android:textSize="@dimen/text_size_16sp"
+                android:drawableRight="@drawable/ic_arrow_dropdown"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Reshus"
+                android:textSize="@dimen/text_size_16sp"
+                android:drawableRight="@drawable/ic_arrow_dropdown"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_marginTop="@dimen/jarak_4dp"
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:hint="@string/password"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/text_size_16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spiner" />
+
+        <EditText
+            android:layout_marginTop="@dimen/jarak_4dp"
+            android:id="@+id/et_repassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:hint="@string/retype_password"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/text_size_16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_password" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/jarak_4dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/et_repassword">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/jarak_10dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size_16sp"
+                android:text="@string/personal"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/jarak_10dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size_16sp"
+                android:text="@string/organization"/>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/et_job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:hint="@string/job"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/text_size_16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/radiogroup2"
+            android:drawableRight="@drawable/ic_arrow_dropdown"
+            />
+
+        <EditText
+            android:layout_marginTop="@dimen/jarak_4dp"
+            android:id="@+id/et_homeadd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:hint="@string/home_address"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/text_size_16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_job"
+            />
+
+        <EditText
+            android:id="@+id/et_defloc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:hint="@string/default_location"
+            android:layout_marginTop="@dimen/jarak_4dp"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/text_size_16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_homeadd"
+            android:drawableRight="@drawable/ic_blood_needed_location"
+            />
+
+        <CheckBox
+            android:id="@+id/cb_agree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/jarak_12dp"
+            android:text="Agree with Terms and Conditions"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="@dimen/text_size_16sp"
+            app:layout_constraintTop_toBottomOf="@id/et_defloc"
+            />
+
+        <Button
+            android:id="@+id/bt_Facebook"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/warna_putih"
+            android:paddingTop="@dimen/jarak_8dp"
+            android:paddingBottom="@dimen/jarak_8dp"
+            android:text="@string/register"
+            android:textColor="@color/warna_light_blue"
+            android:textSize="@dimen/text_size_16sp"
+            android:layout_marginTop="@dimen/jarak_4dp"
+            app:layout_constraintCircleRadius="@dimen/jarak_16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cb_agree"
+            app:strokeColor="@color/warna_light_blue"
+            app:strokeWidth="@dimen/jarak_1koma8dp" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
