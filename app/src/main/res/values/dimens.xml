@@ -20,4 +20,20 @@
     <dimen name="text_size_14sp">14sp</dimen>
     <dimen name="text_size_12sp">12sp</dimen>
     <dimen name="jarak_24dp">24dp</dimen>
+    <dimen name="jarak_200dp">200dp</dimen>
+    <dimen name="text_size_30sp">30sp</dimen>
+    <dimen name="jarak_50dp">50dp</dimen>
+    <dimen name="text_size_38sp">38sp</dimen>
+    <dimen name="jarak_180dp">180dp</dimen>
+    <dimen name="jarak_40dp">40dp</dimen>
+    <dimen name="jarak_42dp">42dp</dimen>
+    <dimen name="jarak_15dp">15dp</dimen>
+    <dimen name="jarak_32dp">32dp</dimen>
+    <dimen name="jarak_30dp">30dp</dimen>
+    <dimen name="jarak_3dp">3dp</dimen>
+    <dimen name="text_size_26sp">26sp</dimen>
+    <dimen name="text_size_11sp">11sp</dimen>
+    <dimen name="text_size_20sp">20sp</dimen>
+    <dimen name="jarak_38dp">38dp</dimen>
+    <dimen name="jarak_2dp">2dp</dimen>
 </resources>

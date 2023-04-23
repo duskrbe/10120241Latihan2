@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/warna_light_blue"
+    android:padding="@dimen/jarak_25dp"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:id="@+id/tv_almost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/jarak_180dp"
+        android:gravity="center"
+        android:text="@string/almost_there"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_38sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_thank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/jarak_8dp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/jarak_40dp"
+        android:paddingRight="@dimen/jarak_40dp"
+        android:text="@string/thanks_you_for_registering_with_us_one_more_step_you_need_check_your_email_to_active_your_account"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_almost" />
+
+    <Button
+        android:id="@+id/bt_verify"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/jarak_60dp"
+        android:backgroundTint="@color/warna_light_blue"
+        android:paddingTop="@dimen/jarak_14dp"
+        android:paddingBottom="@dimen/jarak_14dp"
+        android:text="@string/verify"
+        android:textColor="@color/warna_putih"
+        android:textSize="@dimen/text_size_16sp"
+        app:layout_constraintCircleRadius="@dimen/jarak_16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_thank"
+        app:strokeColor="@color/warna_putih"
+        app:strokeWidth="@dimen/jarak_1koma8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

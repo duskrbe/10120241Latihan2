@@ -63,10 +63,10 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <EditText
-            android:layout_marginTop="@dimen/jarak_4dp"
             android:id="@+id/et_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/jarak_4dp"
             android:backgroundTint="@color/black"
             android:hint="@string/email"
             android:textColorHint="@color/black"
@@ -76,10 +76,10 @@
             app:layout_constraintTop_toBottomOf="@id/et_username" />
 
         <EditText
-            android:layout_marginTop="@dimen/jarak_4dp"
             android:id="@+id/et_phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/jarak_4dp"
             android:backgroundTint="@color/black"
             android:hint="@string/phone_number"
             android:textColorHint="@color/black"
@@ -90,10 +90,10 @@
 
 
         <RadioGroup
-            android:layout_marginTop="@dimen/jarak_4dp"
             android:id="@+id/radiogroup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/jarak_4dp"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@id/et_phone">
 
@@ -102,24 +102,24 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/jarak_10dp"
                 android:layout_weight="1"
-                android:textSize="@dimen/text_size_16sp"
-                android:text="@string/male" />
+                android:text="@string/male"
+                android:textSize="@dimen/text_size_16sp" />
 
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/jarak_10dp"
                 android:layout_weight="1"
-                android:textSize="@dimen/text_size_16sp"
-                android:text="@string/female" />
+                android:text="@string/female"
+                android:textSize="@dimen/text_size_16sp" />
 
         </RadioGroup>
 
         <LinearLayout
-            android:layout_marginTop="@dimen/jarak_4dp"
             android:id="@+id/spiner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/jarak_4dp"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@id/radiogroup">
 
@@ -127,25 +127,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Blood Type"
-                android:textSize="@dimen/text_size_16sp"
-                android:drawableRight="@drawable/ic_arrow_dropdown"/>
+                android:drawableRight="@drawable/ic_arrow_dropdown"
+                android:hint="@string/blood_type"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/text_size_16sp" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Reshus"
-                android:textSize="@dimen/text_size_16sp"
-                android:drawableRight="@drawable/ic_arrow_dropdown"/>
+                android:drawableRight="@drawable/ic_arrow_dropdown"
+                android:hint="@string/reshus"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/text_size_16sp" />
 
         </LinearLayout>
 
         <EditText
-            android:layout_marginTop="@dimen/jarak_4dp"
             android:id="@+id/et_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/jarak_4dp"
             android:backgroundTint="@color/black"
             android:hint="@string/password"
             android:textColorHint="@color/black"
@@ -155,10 +157,10 @@
             app:layout_constraintTop_toBottomOf="@id/spiner" />
 
         <EditText
-            android:layout_marginTop="@dimen/jarak_4dp"
             android:id="@+id/et_repassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/jarak_4dp"
             android:backgroundTint="@color/black"
             android:hint="@string/retype_password"
             android:textColorHint="@color/black"
@@ -180,16 +182,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/jarak_10dp"
                 android:layout_weight="1"
-                android:textSize="@dimen/text_size_16sp"
-                android:text="@string/personal"/>
+                android:text="@string/personal"
+                android:textSize="@dimen/text_size_16sp" />
 
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/jarak_10dp"
                 android:layout_weight="1"
-                android:textSize="@dimen/text_size_16sp"
-                android:text="@string/organization"/>
+                android:text="@string/organization"
+                android:textSize="@dimen/text_size_16sp" />
         </RadioGroup>
 
         <EditText
@@ -197,43 +199,40 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/black"
+            android:drawableRight="@drawable/ic_arrow_dropdown"
             android:hint="@string/job"
             android:textColorHint="@color/black"
             android:textSize="@dimen/text_size_16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/radiogroup2"
-            android:drawableRight="@drawable/ic_arrow_dropdown"
-            />
+            app:layout_constraintTop_toBottomOf="@id/radiogroup2" />
 
         <EditText
-            android:layout_marginTop="@dimen/jarak_4dp"
             android:id="@+id/et_homeadd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/jarak_4dp"
             android:backgroundTint="@color/black"
             android:hint="@string/home_address"
             android:textColorHint="@color/black"
             android:textSize="@dimen/text_size_16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/et_job"
-            />
+            app:layout_constraintTop_toBottomOf="@id/et_job" />
 
         <EditText
             android:id="@+id/et_defloc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/black"
-            android:hint="@string/default_location"
             android:layout_marginTop="@dimen/jarak_4dp"
+            android:backgroundTint="@color/black"
+            android:drawableRight="@drawable/ic_blood_needed_location"
+            android:hint="@string/default_location"
             android:textColorHint="@color/black"
             android:textSize="@dimen/text_size_16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/et_homeadd"
-            android:drawableRight="@drawable/ic_blood_needed_location"
-            />
+            app:layout_constraintTop_toBottomOf="@id/et_homeadd" />
 
         <CheckBox
             android:id="@+id/cb_agree"
@@ -241,30 +240,28 @@
             android:layout_height="wrap_content"
             android:paddingLeft="@dimen/jarak_12dp"
             android:text="Agree with Terms and Conditions"
-            app:layout_constraintStart_toStartOf="parent"
             android:textSize="@dimen/text_size_16sp"
-            app:layout_constraintTop_toBottomOf="@id/et_defloc"
-            />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_defloc" />
 
         <Button
-            android:id="@+id/bt_Facebook"
+            android:id="@+id/bt_register"
             style="?attr/materialButtonOutlinedStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/jarak_4dp"
             android:backgroundTint="@color/warna_putih"
             android:paddingTop="@dimen/jarak_8dp"
             android:paddingBottom="@dimen/jarak_8dp"
             android:text="@string/register"
             android:textColor="@color/warna_light_blue"
             android:textSize="@dimen/text_size_16sp"
-            android:layout_marginTop="@dimen/jarak_4dp"
             app:layout_constraintCircleRadius="@dimen/jarak_16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cb_agree"
             app:strokeColor="@color/warna_light_blue"
             app:strokeWidth="@dimen/jarak_1koma8dp" />
-
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

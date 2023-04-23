@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="warna_light_blue">#43b3e6</color>
     <color name="warna_putih">#ffffff</color>
+    <color name="warna_desc">#808284</color>
 </resources>
