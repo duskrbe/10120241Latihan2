@@ -103,6 +103,7 @@
                 android:layout_marginLeft="@dimen/jarak_10dp"
                 android:layout_weight="1"
                 android:text="@string/male"
+                android:textColor="@color/black"
                 android:textSize="@dimen/text_size_16sp" />
 
             <RadioButton
@@ -111,6 +112,7 @@
                 android:layout_marginLeft="@dimen/jarak_10dp"
                 android:layout_weight="1"
                 android:text="@string/female"
+                android:textColor="@color/black"
                 android:textSize="@dimen/text_size_16sp" />
 
         </RadioGroup>
@@ -183,6 +185,7 @@
                 android:layout_marginLeft="@dimen/jarak_10dp"
                 android:layout_weight="1"
                 android:text="@string/personal"
+                android:textColor="@color/black"
                 android:textSize="@dimen/text_size_16sp" />
 
             <RadioButton
@@ -190,6 +193,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/jarak_10dp"
                 android:layout_weight="1"
+                android:textColor="@color/black"
                 android:text="@string/organization"
                 android:textSize="@dimen/text_size_16sp" />
         </RadioGroup>
@@ -241,6 +245,7 @@
             android:paddingLeft="@dimen/jarak_12dp"
             android:text="Agree with Terms and Conditions"
             android:textSize="@dimen/text_size_16sp"
+            android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/et_defloc" />
 
